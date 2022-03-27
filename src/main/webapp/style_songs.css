@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+html, body {
+    background-color: greenyellow;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    cursor: hand;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.container {
+    /*min-height: 72vh;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    left: 0;
+    right: 0;
+    position: absolute;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 75%;
+    margin: 70px auto;
+    border-radius: 12px;
+    padding: 34px;
+    height: 72%;
+    background: black url('bg2.jpg') no-repeat 50% 50%;
+}
+
+.songList {
+    width: auto;
+    max-width: 50%;
+    height: 100%;
+}
+
+.bottom {
+    position: fixed;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+.icons {
+    fill: white;
+    display: flex;
+    margin-top: 14px;
+    width: 20%;
+    margin: 20px auto;
+}
+
+.icon {
+    fill: white;
+    width: 500px;
+    height: 40px;
+}
+
+#myProgressBar {
+    width: 80vw;
+}
+
+#playSongIcon {
+    height: 24px;
+    width: 24px;
+    fill: black;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.songItemContainer {
+    margin-top: 64px;
+    width: auto;
+    max-width: 32vw;
+    max-height: 80%;
+    overflow: scroll;
+}
+
+.songItem {
+    padding: 20px;
+    display: flex;
+    background-color: white;
+
+    /*width: 80%;*/
+    color: black;
+    margin: 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    /*cursor: pointer;*/
+}
+
+.songItem div {
+    display: flex;
+    /*justify-content: ;*/
+}
+
+/*.likedAndDuration {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.songlistplay{*/
+/*    display: flex;*/
+/*    justify-content: end;*/
+/*    align-items: center;*/
+/*}*/
+
+.timestamp {
+    margin: 0 10px;
+}
+
+/*.albumLiked{*/
+/*    */
+/*}*/
+
+.songLiked .icon {
+    fill: black;
+    height: 20px;
+    width: 20px;
+    margin-left: 8px;
+}

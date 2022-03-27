@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<db>
+    <Artist>
+        The doors
+        <Liked>false</Liked>
+        <Album>
+            The doors
+            <Liked>false</Liked>
+            <Year>1967</Year>
+            <Songs>
+                <Song>
+                    Break On Through (To The Other Side)
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    Soul Kitchen
+                    <Liked>false</Liked>
+                </Song>
+                <Song>
+                    The Crystal Ship
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    Twentieth Century Fox
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    Alabama Song (Whisky Bar)
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    Light My Fire
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    Back Door Man
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    I Looked At You
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    End Of The Night
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    Take It As It Comes
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    The End
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    The End
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    The End
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    The End
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    The End
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    The End
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    The End
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    The End
+                    <Liked>true</Liked>
+                </Song>
+            </Songs>
+        </Album>
+        <Album>
+            L.A. Woman
+            <Liked>false</Liked>
+            <Year>1971</Year>
+            <Songs>
+                <Song>
+                    Light my fire
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    Light my fire
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    Light my fire
+                    <Liked>true</Liked>
+                </Song>
+                <Song>
+                    Light my fire
+                    <Liked>true</Liked>
+                </Song>
+            </Songs>
+        </Album>
+        <Album>
+            Strange Days
+            <Liked>false</Liked>
+            <Year>1967</Year>
+            <Songs>
+                <Song>Light my fire</Song>
+                <Song>Light my fire</Song>
+                <Song>Light my fire</Song>
+                <Song>Light my fire</Song>
+            </Songs>
+        </Album>
+        <Album>
+            Morrison Hotel
+            <Liked>false</Liked>
+            <Year>1970</Year>
+            <Songs>
+                <Song>Light my fire</Song>
+                <Song>Light my fire</Song>
+                <Song>Light my fire</Song>
+                <Song>Light my fire</Song>
+            </Songs>
+        </Album>
+    </Artist>
+    <Artist>
+        Paracoccidioidomicosisproctitissarcomucosis
+        <Liked>false</Liked>
+        <Album>
+            The doors
+            <Year>1967</Year>
+            <Songs>
+                <Song>Light my fire</Song>
+                <Song>Light my fire</Song>
+                <Song>Light my fire</Song>
+                <Song>Light my fire</Song>
+            </Songs>
+        </Album>
+    </Artist>
+    <Artist>
+        Queen
+        <Liked>false</Liked>
+        <Album>
+            The doors
+            <Year>true</Year>
+            <Songs>
+                <Song>Light my fire</Song>
+                <Song>Light my fire</Song>
+                <Song>Light my fire</Song>
+                <Song>Light my fire</Song>
+            </Songs>
+        </Album>
+    </Artist>
+</db>
