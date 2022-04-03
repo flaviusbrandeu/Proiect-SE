@@ -10,7 +10,9 @@
             <Songs>
                 <Song>
                     Break On Through (To The Other Side)
-                    <Liked>true</Liked>
+                    <Liked>false</Liked>
+                    <Genre></Genre>
+                    <NumberOfPlays>0</NumberOfPlays>
                 </Song>
                 <Song>
                     Soul Kitchen

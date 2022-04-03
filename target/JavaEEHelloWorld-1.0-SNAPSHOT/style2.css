@@ -67,42 +67,16 @@ nav a {
     background: black url('bg2.jpg') no-repeat 50% 50%;
 }
 
-.songList {
+.list {
     width: auto;
     max-width: 50%;
     height: 100%;
-}
-
-.bottom {
-    position: fixed;
-    height: 100px;
-    background-color: black;
-    color: white;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-}
-
-.icons {
-    fill: white;
-    display: flex;
-    margin-top: 14px;
-    width: 20%;
-    margin: 20px auto;
 }
 
 .icon {
     fill: white;
     width: 500px;
     height: 40px;
-}
-
-#myProgressBar {
-    width: 80vw;
 }
 
 #playSongIcon {
@@ -113,7 +87,7 @@ nav a {
     margin-right: 8px;
 }
 
-.songItemContainer {
+.itemContainer {
     margin-top: 64px;
     width: auto;
     max-width: 32vw;
@@ -121,7 +95,7 @@ nav a {
     overflow: scroll;
 }
 
-.songItem {
+.item {
     padding: 20px;
     display: flex;
     background-color: white;
@@ -135,9 +109,14 @@ nav a {
     /*cursor: pointer;*/
 }
 
-.songItem div {
+.item div {
     display: flex;
     /*justify-content: ;*/
+}
+
+.name:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /*.likedAndDuration {*/
@@ -159,9 +138,71 @@ nav a {
 /*    */
 /*}*/
 
-.songLiked .icon {
+.liked .icon {
     fill: black;
     height: 20px;
     width: 20px;
     margin-left: 8px;
+}
+
+.bottom {
+    position: fixed;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 5px 20px;
+}
+
+.songInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.icons {
+    fill: white;
+    display: flex;
+    width: 30%;
+    margin: 20px auto;
+}
+
+.playSong {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+#myProgressBar {
+    width: 95%;
+    /*width: 80vw;*/
+}
+
+#masterSongName{
+    /*width: 90%;*/
+    align-self: center;
+    max-height: 90px;
+    margin-right: 4px;
+}
+
+#gif{
+    /*width: 10%;*/
+    height: 50px;
+    width: 64px;
+    /*max-height: 50px;*/
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    align-self: center;
+    margin-left: 4px;
 }

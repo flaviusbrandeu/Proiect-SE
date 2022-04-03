@@ -3,6 +3,7 @@
 
 body{
     background-color: greenyellow;
+    height: 100%;
 }
 
 *{
@@ -12,6 +13,9 @@ body{
 
 nav{
     font-family: 'Ubuntu', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav ul{
@@ -46,26 +50,29 @@ nav a{
 }
 
 .container{
-    min-height: 72vh;
-    background-color: black;
+    left: 0;
+    right: 0;
+    position: absolute;
     color: white;
     font-family: 'Varela Round', sans-serif;
     display: flex;
     width: 75%;
-    margin: 23px auto;
+    margin: 72px auto;
     border-radius: 12px;
     padding: 34px;
-    background-image: url('bg2.jpg');
+    height: 72%;
+    background: black url('bg2.jpg') no-repeat 50% 50%;
 }
 
 .albumList{
     width: auto;
     max-width: 50%;
+    height: 100%;
 }
 
 .bottom{
-    position: sticky;
-    height: 130px;
+    position: fixed;
+    height: 100px;
     background-color: black;
     color: white;
     bottom: 0;
@@ -73,7 +80,8 @@ nav a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 12px 0;
+    width: 100%;
+    margin: 0;
 }
 
 .icons{
@@ -104,21 +112,20 @@ nav a{
 .albumItemContainer{
     margin-top: 64px;
     width: auto;
-    max-width: 20vw;
+    max-width: 32vw;
+    max-height: 80%;
+    overflow: scroll;
 }
 
 .albumItem{
     padding: 20px;
     display: flex;
     background-color: white;
-
-    /*width: 80%;*/
     color: black;
     margin: 12px;
     justify-content: space-between;
     align-items: center;
     border-radius: 34px;
-    /*cursor: pointer;*/
 }
 
 /*.songlistplay{*/
@@ -144,4 +151,5 @@ nav a{
     fill: black;
     height: 20px;
     width: 20px;
+    margin-left: 8px;
 }

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><db>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<db>
     <Artist>
         The doors
         <Liked>false</Liked>
@@ -9,7 +10,9 @@
             <Songs>
                 <Song>
                     Break On Through (To The Other Side)
-                    <Liked>true</Liked>
+                    <Liked>false</Liked>
+                    <Genre></Genre>
+                    <NumberOfPlays>0</NumberOfPlays>
                 </Song>
                 <Song>
                     Soul Kitchen

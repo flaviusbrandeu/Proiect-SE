@@ -70,6 +70,27 @@ public class XmlHandler {
         return null;
     }
 
+    public static Node getSongNode(Document doc, String artist, String album, String song) {
+//        Node artistNode = getArtistNode(doc, artist);
+        Node albumNode = getAlbumNode(doc, artist, album);
+        if (albumNode != null) {
+            List<Node> songsNodes = getNodesByName(albumNode, "Songs");
+            if (songsNodes.size() == 1) {
+                Node songsNode = songsNodes.get(0);
+                if (songsNode != null) {
+                    List<Node> songNodes = getNodesByName(songsNode, "Song");
+                    for (int i = 0; i < songNodes.size(); i++) {
+                        Node songNode = songNodes.get(i);
+                        if (songNode.getFirstChild().getNodeValue().trim().equals(song)) {
+                            return songNode;
+                        }
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
     public static List<Node> getNodesByName(Node rootNode, String name) {
         NodeList artistChildNodes = rootNode.getChildNodes();
         List<Node> nodes = new ArrayList<>();
@@ -108,7 +129,7 @@ public class XmlHandler {
         Node albumNode = getAlbumNode(doc, artist, album);
         if (albumNode != null) {
             List<Node> songsNodes = getNodesByName(albumNode, "Songs");
-            if(!songsNodes.isEmpty()){
+            if (!songsNodes.isEmpty()) {
                 List<Node> songNodes = getNodesByName(songsNodes.get(0), "Song");
                 for (Node songNode : songNodes) {
                     String SongTitle = songNode.getFirstChild().getNodeValue().trim();

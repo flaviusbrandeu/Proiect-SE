@@ -35,9 +35,15 @@ public class LikeUnlikeServlet extends HttpServlet {
                 throw new ServletException("Invalid or non-existent xml-name context-param.");
             String artist = request.getParameter("artist");
             String album = request.getParameter("album");
+            String song = request.getParameter("song");
             String action = request.getParameter("action");
             try {
-                if (dataToModify.equals("album")) {
+                if (dataToModify.equals("song")) {
+                    if (artist != null && album != null && song != null && action != null &&
+                            !artist.equals("") && !album.equals("") && !song.equals("") && !action.equals("")) {
+                        changeLikeSong(xmlPath, artist, album, song, action);
+                    }
+                } else if (dataToModify.equals("album")) {
                     if (artist != null && album != null &&
                             !artist.equals("") && !album.equals("") &&
                             action != null && !action.equals("")) {
@@ -88,6 +94,15 @@ public class LikeUnlikeServlet extends HttpServlet {
         Node artistNode = getArtistNode(doc, artist);
         if (artistNode != null) {
             changeLike(action, artistNode);
+            saveDocumentChanges(doc, xmlPath);
+        }
+    }
+
+    private void changeLikeSong(String xmlPath, String artist, String album, String song, String action) throws TransformerException, ParserConfigurationException, SAXException, IOException {
+        Document doc = getXmlDocument(xmlPath);
+        Node songNode = getSongNode(doc, artist, album, song);
+        if (songNode != null) {
+            changeLike(action, songNode);
             saveDocumentChanges(doc, xmlPath);
         }
     }
