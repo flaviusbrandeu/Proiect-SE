@@ -12,7 +12,7 @@
     </context-param>
     <context-param>
         <param-name>xml-name</param-name>
-        <param-value>db.xml</param-value>
+        <param-value>KDB.xml</param-value>
     </context-param>
     <servlet>
         <servlet-name>Servlet1</servlet-name>

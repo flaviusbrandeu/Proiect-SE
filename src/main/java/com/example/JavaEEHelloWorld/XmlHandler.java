@@ -128,14 +128,11 @@ public class XmlHandler {
         List<Song> songs = new ArrayList<>();
         Node albumNode = getAlbumNode(doc, artist, album);
         if (albumNode != null) {
-            List<Node> songsNodes = getNodesByName(albumNode, "Songs");
-            if (!songsNodes.isEmpty()) {
-                List<Node> songNodes = getNodesByName(songsNodes.get(0), "Song");
-                for (Node songNode : songNodes) {
-                    String SongTitle = songNode.getFirstChild().getNodeValue().trim();
-                    boolean songLiked = parseBoolean(songNode.getFirstChild().getNextSibling().getFirstChild().getNodeValue().trim());
-                    songs.add(new Song(SongTitle, songLiked));
-                }
+            List<Node> songNodes = getNodesByName(albumNode, "Song");
+            for (Node songNode : songNodes) {
+                String SongTitle = songNode.getFirstChild().getNodeValue().trim();
+                boolean songLiked = parseBoolean(songNode.getFirstChild().getNextSibling().getFirstChild().getNodeValue().trim());
+                songs.add(new Song(SongTitle, songLiked));
             }
         }
         return songs;

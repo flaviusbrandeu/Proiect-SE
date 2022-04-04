@@ -233,18 +233,27 @@ function switchPlayPauseIcons(action, playIcon, pauseIcon) {
 }
 
 let isPlaying = false;
+let interval = null;
 
 function playSong(artist, song) {
-    console.log('Play song ' + artist + ' - ' + song);
+    let songInfo = document.querySelector('.songInfo');
+    let masterSongName = document.querySelector('#masterSongName');
     let masterPause = document.querySelector('#masterPause');
     let masterPlay = document.querySelector('#masterPlay');
     let myProgressBar = document.querySelector('#myProgressBar');
-    switchPlayPauseIcons('play', masterPlay, masterPause);
+    let gif = document.getElementById('gif');
+    isPlaying = true;
     myProgressBar.value = 0;
+    masterSongName.textContent = artist + ' - ' + song;
+    songInfo.style.display = 'flex';
     let counter = 0;
     let delay = 1000;
-    playPause();
-    let interval = setInterval(() => {
+    if(interval != null) {
+        clearInterval(interval);
+    }
+    switchPlayPauseIcons('play', masterPlay, masterPause);
+    switchGifOpacity('play', gif);
+    interval = setInterval(() => {
         if(isPlaying){
             let progress = (counter / 60) * 100;
             myProgressBar.value = progress;

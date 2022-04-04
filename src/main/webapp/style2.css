@@ -161,8 +161,9 @@ nav a {
 }
 
 .songInfo {
+    display: none;
     width: 50%;
-    display: flex;
+    /*display: flex;*/
     flex-direction: row;
     justify-content: flex-end;
     font-family: 'Varela Round', sans-serif;
